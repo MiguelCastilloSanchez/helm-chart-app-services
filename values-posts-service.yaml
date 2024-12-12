@@ -1,0 +1,35 @@
+appName: posts-service
+appPort: 8082
+namespace: app-test
+replicas: 1
+
+image:
+  repository: miguelacs/personal
+  tag: "1.0.1-posts-service"
+
+mongodb:
+  host: "my-mongodb-posts-service"
+  port: "27017"
+  username: "mongodb-posts-service-user"
+  password: "mongodb-posts-password"
+  database: "posts_db"
+
+jwt:
+  secret: "my-test-secret-key"
+
+redis:
+  host: "my-redis-master"
+  port: "6379"
+  password: "redis-password"
+
+rabbitmq:
+  host: "my-rabbitmq"
+  port: "5672"
+  username: "rabbitmq-user-for-all-services"
+  password: "rabbitmq-password"
+  exchange: "app-exchange"
+  queue_user: "NULL"
+  queue_auth: "NULL"
+  queue_posts: "posts-service-queue"
+  routing_key_register: "NULL"
+  routing_key_delete: "user.delete"

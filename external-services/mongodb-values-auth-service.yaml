@@ -1,0 +1,12 @@
+auth:
+  enabled: true
+  rootPassword: root-test-password 
+  username: mongodb-auth-service-user
+  password: mongodb-auth-service-password
+  database: auth_db
+
+replicaSet:
+  enabled: false
+persistence:
+  enabled: true
+  size: 8Gi

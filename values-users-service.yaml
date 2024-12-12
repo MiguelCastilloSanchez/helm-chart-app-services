@@ -1,0 +1,35 @@
+appName: users-service
+appPort: 8081
+namespace: app-test
+replicas: 1
+
+image:
+  repository: miguelacs/personal
+  tag: "1.1.0-users-service"
+
+mongodb:
+  host: "my-mongodb-users-service"
+  port: "27017"
+  username: "mongodb-users-service-user"
+  password: "mongodb-users-service-password"
+  database: "users_db"
+
+jwt:
+  secret: "my-test-secret-key"
+
+redis:
+  host: "my-redis-master"
+  port: "6379"
+  password: "redis-password"
+
+rabbitmq:
+  host: "my-rabbitmq"
+  port: "5672"
+  username: "rabbitmq-user-for-all-services"
+  password: "rabbitmq-password"
+  exchange: "app-exchange"
+  queue_user: "user-service-queue"
+  queue_auth: "auth-service-queue"
+  queue_posts: "posts-service-queue"
+  routing_key_register: "NULL"
+  routing_key_delete: "user.delete"

@@ -1,0 +1,24 @@
+auth:
+  username: rabbitmq-user-for-all-services
+  password: rabbitmq-password
+  erlangCookie: secretcookie
+  existingPasswordSecret: ""
+
+service:
+  type: ClusterIP
+  ports:
+    amqp: 5672
+    management: 15672
+
+persistence:
+  enabled: true
+  size: 8Gi
+
+replicaCount: 1
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 200m
+    memory: 128Mi

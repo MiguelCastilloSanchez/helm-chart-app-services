@@ -1,0 +1,12 @@
+auth:
+  enabled: true
+  rootPassword: root-test-password 
+  username: mongodb-posts-service-user
+  password: mongodb-posts-service-password
+  database: posts_db
+
+replicaSet:
+  enabled: false
+persistence:
+  enabled: true
+  size: 8Gi

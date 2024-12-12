@@ -1,0 +1,5 @@
+helm install my-mongodb-[SERVICE] bitnami/mongodb -f mongodb-values.yaml --namespace app-test
+
+helm install my-rabbitmq bitnami/rabbitmq -f rabbitmq-values.yaml --namespace app-test
+
+helm install my-redis bitnami/redis -f redis-values.yaml --namespace app-test

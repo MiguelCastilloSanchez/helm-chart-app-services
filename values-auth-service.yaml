@@ -1,0 +1,35 @@
+appName: auth-service
+appPort: 8080
+namespace: app-test
+replicas: 1
+
+image:
+  repository: miguelacs/personal
+  tag: "1.1.4-auth-service"
+
+mongodb:
+  host: "my-mongodb-auth-service"
+  port: "27017"
+  username: "mongodb-auth-service-user"
+  password: "mongodb-auth-service-password"
+  database: "auth_db"
+
+jwt:
+  secret: "my-test-secret-key"
+
+redis:
+  host: "my-redis-master"
+  port: "6379"
+  password: "redis-password"
+
+rabbitmq:
+  host: "my-rabbitmq"
+  port: "5672"
+  username: "rabbitmq-user-for-all-services"
+  password: "rabbitmq-password"
+  exchange: "app-exchange"
+  queue_user: "user-service-queue"
+  queue_auth: "auth-service-queue"
+  queue_posts: "NULL"
+  routing_key_register: "user.register"
+  routing_key_delete: "NULL"

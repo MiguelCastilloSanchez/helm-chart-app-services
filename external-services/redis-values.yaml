@@ -1,0 +1,19 @@
+auth:
+  enabled: true
+  password: redis-password
+
+replica:
+  replicaCount: 1
+
+master:
+  persistence:
+    enabled: true
+    size: 8Gi
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 200m
+    memory: 128Mi
