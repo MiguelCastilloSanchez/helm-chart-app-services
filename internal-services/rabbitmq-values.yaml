@@ -1,5 +1,5 @@
 auth:
-  username: rabbitmq-user-for-all-services
+  username: rabbitmq-user
   password: rabbitmq-password
   erlangCookie: secretcookie
   existingPasswordSecret: ""

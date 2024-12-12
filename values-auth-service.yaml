@@ -25,7 +25,7 @@ redis:
 rabbitmq:
   host: "my-rabbitmq"
   port: "5672"
-  username: "rabbitmq-user-for-all-services"
+  username: "rabbitmq-user"
   password: "rabbitmq-password"
   exchange: "app-exchange"
   queue_user: "user-service-queue"
