@@ -5,7 +5,7 @@ replicas: 1
 
 image:
   repository: miguelacs/personal
-  tag: "1.0.1-posts-service"
+  tag: "1.1.0-posts-service"
 
 mongodb:
   host: "my-mongodb-posts-service"
