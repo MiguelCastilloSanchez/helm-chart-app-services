@@ -97,4 +97,14 @@ At the end of the file, add the following line:
 ## Conclusion
 Your Kubernetes cluster with the backend is now fully deployed. ArgoCD ensures that any changes pushed to the repository will automatically propagate to the configured environment.
 
+For a better understanding of the architecture and deployed services (including their endpoints), you can visit their respective repositories:
+- [Auth Service](https://github.com/MiguelCastilloSanchez/spring-boot-auth-service)
+- [Users Service](https://github.com/MiguelCastilloSanchez/spring-boot-users-service)
+- [Posts Service](https://github.com/MiguelCastilloSanchez/spring-boot-posts-service)
+
+### Cluster Architecture
+![Cluster](images/cluster.png)
+
+### CI/CD Architecture
+![CI/CD](images/CICD.png)
 
