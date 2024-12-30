@@ -5,7 +5,7 @@ replicas: 1
 
 image:
   repository: miguelacs/personal
-  tag: "2.0.1-users-service"
+  tag: "3.0.0-users-service"
 
 mongodb:
   host: "my-mongodb-users-service"
