@@ -5,7 +5,7 @@ replicas: 1
 
 image:
   repository: miguelacs/personal
-  tag: "3.0.0-auth-service"
+  tag: "2.1.0-auth-service"
 
 mongodb:
   host: "my-mongodb-auth-service"
