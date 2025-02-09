@@ -1,6 +1,6 @@
-# Kubernetes Backend Deployment for Vlog Website
+# Kubernetes Backend Deployment for Blog Website
 
-This repository contains all the necessary files to deploy a backend for a vlog website on a Kubernetes cluster (specifically Minikube). The backend is composed of three main microservices: `auth-service`, `users-service`, and `posts-service`. These services are managed using ArgoCD to ensure continuous deployment. The backend handles user authentication, user information management, and the entire business logic for posts.
+This repository contains all the necessary files to deploy a backend for a blog website on a Kubernetes cluster (specifically Minikube). The backend is composed of three main microservices: `auth-service`, `users-service`, and `posts-service`. These services are managed using ArgoCD to ensure continuous deployment. The backend handles user authentication, user information management, and the entire business logic for posts.
 
 ## Prerequisites
 To run the cluster with the backend infrastructure, ensure you have the following installed:
